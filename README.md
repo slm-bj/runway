@@ -64,27 +64,29 @@ This project collects creative ideas from everyone. Anyone can contribute ideas 
    ```
    projects/project-name/
    ├── README.md          # 需求描述 (Requirements description)
-   ├── proposal.md        # 立项报告 (Project proposal)
+   ├── proposal.md        # 调研报告 (Research report)
    └── REPOSITORY.md      # 新项目仓库链接 (New repo link)
    ```
 
 2. **编写 README.md** - Write the README.md
    - 详细的需求描述
-   - 项目目标
+   - 项目目标和成功指标
    - 功能清单
    - Detailed requirements description
-   - Project objectives
+   - Project goals and success metrics
    - Feature list
 
 3. **编写 proposal.md** - Write the proposal.md
-   - 技术方案
-   - 实施计划
-   - 资源需求
-   - 时间规划
-   - Technical approach
-   - Implementation plan
-   - Resource requirements
-   - Timeline
+   - 背景和问题分析
+   - 市场和竞品调研
+   - 技术可行性分析
+   - 项目可行性结论
+   - Background and problem analysis
+   - Market and competitive research
+   - Technical feasibility analysis
+   - Project feasibility conclusion
+   - **注意**：不包含具体的设计和实现细节，这些内容在关联仓库中
+   - **Note**: Does not include specific design and implementation details, which belong in the associated repository
 
 4. **创建新的代码仓库** - Create a new code repository
    - 在 GitHub 创建新仓库实施项目
@@ -104,7 +106,7 @@ ideas/
 ├── projects/             # 已实施的项目 (Implemented projects)
 │   └── project-name/     # 项目目录 (Project directory)
 │       ├── README.md     # 需求描述 (Requirements)
-│       ├── proposal.md   # 项目提案 (Proposal)
+│       ├── proposal.md   # 调研报告 (Research report)
 │       └── REPOSITORY.md # 仓库链接 (Repo link)
 └── Example/              # 示例项目 (Example project)
     ├── README.md

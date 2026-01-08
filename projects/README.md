@@ -12,7 +12,7 @@ Each project should contain the following files:
 ```
 project-name/
 ├── README.md          # 需求描述和项目概述 (Requirements and project overview)
-├── proposal.md        # 详细的立项报告 (Detailed project proposal)
+├── proposal.md        # 调研报告 (Research report)
 └── REPOSITORY.md      # 项目仓库链接 (Project repository link)
 ```
 
