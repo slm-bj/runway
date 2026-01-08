@@ -84,11 +84,49 @@ Create a new branch for the idea:
 git checkout -b idea/your-idea-name
 ```
 
-### Step 5: Write the Idea File
+### Step 5: Get Contributor Information (Username and Email)
 
-Create the idea file at `ideas/<filename>.md` following the template structure from `references/template.md`. Ensure all sections are filled with the refined content.
+Before writing the idea file, get the user's GitHub username and email for the Contributors section. Try these methods in order:
 
-### Step 6: Commit and Push
+1. **Try GitHub CLI:**
+   ```bash
+   gh api user --jq '.login' 2>/dev/null
+   gh api user --jq '.email' 2>/dev/null
+   ```
+
+2. **Try local git config:**
+   ```bash
+   git config --local github.user
+   git config --local github.email
+   ```
+
+3. **Try global git config:**
+   ```bash
+   git config --global github.user
+   git config --global github.email
+   ```
+
+4. **Try parsing remote URL:**
+   ```bash
+   git remote get-url origin 2>/dev/null | sed -n 's/.*:\(.*\)\/.*/\1/p' | head -1
+   ```
+
+5. **If all fail, ask the user:**
+   ```
+   "What's your GitHub username and email? (I'll use this in the Contributors section)"
+   ```
+
+6. **If user provides information manually, remember it locally for future use:**
+   ```bash
+   git config --local github.user <username>
+   git config --local github.email <email>
+   ```
+
+### Step 6: Write the Idea File
+
+Create the idea file at `ideas/<filename>.md` following the template structure from `references/template.md`. Ensure all sections are filled with the refined content, and use the actual GitHub username obtained in Step 5 for the Contributors section (format: `[@username] - Idea Author`).
+
+### Step 7: Commit and Push
 
 Commit with the standardized format:
 
