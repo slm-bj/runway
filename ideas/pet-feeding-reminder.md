@@ -70,4 +70,4 @@ PetFeeding Mate 是一个简单直观的宠物喂养管理应用：
 
 ## Contributors
 
-- [@your-github-username] - Idea Author
+- [@cyberelf] - Idea Author
